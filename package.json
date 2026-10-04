@@ -4,8 +4,12 @@
   "description": "Servidor local que liga a live do TikTok ao jogo de batalha de presentes",
   "type": "module",
   "main": "server.js",
-  "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
     "tiktok-live-connector": "^2.0.0",
     "ws": "^8.18.0"
