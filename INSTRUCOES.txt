@@ -1,0 +1,35 @@
+BATALHA DE PRESENTES - servidor próprio (sem TikFinity)
+=======================================================
+
+O que precisa: Node.js 18 ou mais novo (https://nodejs.org).
+
+1) Abra o terminal (Prompt de Comando) dentro desta pasta.
+2) Instale as dependências (só na primeira vez):
+       npm install
+3) Inicie o servidor:
+       npm start
+4) Abra no Chrome:  http://localhost:3000/
+   O ponto no canto da tela fica verde quando a página conecta no servidor.
+5) Ligue a live do @mendeescriolo. O servidor conecta sozinho (tenta a cada 10s)
+   e cada presente aparece no terminal.
+
+TESTE SEM LIVE
+   Abra:  http://localhost:3000/teste?gift=Rose&n=1
+   (troque Rose pelo nome de um presente das listas; n = quantidade)
+
+AJUSTES
+   - Outro @ (PowerShell):  $env:TIKTOK_USER="outrousuario"; npm start
+   - Outra porta (PowerShell):  $env:PORT="4000"; npm start
+   - Ver o evento completo no terminal:  $env:DEBUG="1"; npm start
+     (no Mac/Linux: TIKTOK_USER=outro PORT=4000 DEBUG=1 npm start)
+   - Presentes de cada lado, META, nomes e fotos: edite o topo do batalha-tiktok.html.
+
+NO TIKTOK LIVE STUDIO
+   Adicione uma fonte de captura de janela do Chrome com a página aberta,
+   ou uma fonte de página da web com o endereço http://localhost:3000/
+   (?transparente=1 no final deixa o fundo transparente em fonte de navegador).
+
+SE NÃO CONECTAR NA LIVE
+   - A live precisa estar no ar e o @ correto.
+   - Confira se o nome do presente no terminal bate com as listas do HTML.
+   - Se aparecer erro mesmo com a live no ar, rode com DEBUG=1 e guarde a mensagem.
