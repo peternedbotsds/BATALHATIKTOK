@@ -13,7 +13,7 @@ import * as TLC from "tiktok-live-connector";
 // ----------------- CONFIGURAÇÕES (edite aqui) -----------------
 const USUARIO = (process.env.TIKTOK_USER || "mendeescriolo").replace(/^@/, ""); // seu @ (sem o @)
 const PORTA = Number(process.env.PORT || 3000);          // porta do site local
-const HOST = process.env.HOST || "127.0.0.1";            // 127.0.0.1 = só este PC acessa
+const HOST = process.env.HOST || "0.0.0.0";              // Railway precisa escutar em todas as interfaces
 const TENTAR_DE_NOVO_MS = 10000;                         // espera antes de reconectar
 const MOSTRAR_EVENTO_BRUTO = process.env.DEBUG === "1";  // DEBUG=1 mostra o evento completo no terminal
 const ARQUIVO_JOGO = "batalha-tiktok.html";
